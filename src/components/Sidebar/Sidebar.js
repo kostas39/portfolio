@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import './Sidebar.scss';
 import letterk from '../../assets/images/letter-k.png';
-import logoSub from '../../assets/images/logoSub.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faHome, faUser, faEnvelope, faSuitcase, faGear, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +13,7 @@ const Sidebar = () => {
     <div className="nav-bar">
       <div className='logo'>
       <img src={letterk} alt="logo" />
-      <img className='sublogo' src={logoSub} alt="logoSubtitle" />
+      <h1>KOLIOLIOS</h1>
     </div>
       <nav className={showNav ? 'mobile-show' : ''}>
       <NavLink onClick={() => setShowNav(false)} exact="true" activeclassname='active' to="/">
