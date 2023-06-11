@@ -1,0 +1,218 @@
+@import '../../App.scss';
+
+.nav-bar {
+  background: var(--navbar-color);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+  .sublogo {
+    position: absolute;
+    z-index: 0;
+    top: 60px;
+    left: 2px;
+  }
+
+    img {
+      margin: 16px;
+      width: 50px;
+      height: auto;
+
+      &.sub-logo {
+        width: 50px;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: absolute;
+    height: 10px;
+    top: 25%;
+    margin-top: 0px;
+    width: 100%;
+
+    a {
+      font-size: 32px;
+      color: var(--primary-color);
+      display: block;
+      line-height: 51px;
+      height: 10px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: var(--background-color);
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-family: Helvetica;
+        font-size: 18px;
+        letter-spacing: 2px;
+        position: inherit;
+        bottom: 45px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.active {
+      svg {
+        color: var(--secondary-color);
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    top: 5px;
+    right: 16px;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+        color: #4d4d4e;
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+.hamburger-icon,
+.close-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+    nav {
+      display: none;
+    }
+
+    ul {
+      top: 50px;
+      z-index: 2;
+      .anchor-icon {
+        font-size: 24px;
+      }
+    }
+
+    nav {
+      width: 100%;
+      height: 100%;
+      background: white;
+      top: 0;
+      left: 0;
+      position: fixed;
+      z-index: 2;
+      margin: 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10px;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+
+      a.active {
+        svg {
+          color: whitesmoke;
+        }
+      }
+
+      &.mobile-show {
+        display: block;
+      }
+    }
+
+    .hamburger-icon,
+    .close-icon {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+  }
+}
