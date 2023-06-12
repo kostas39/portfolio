@@ -102,38 +102,6 @@
         color: black;
       }
     }
-    .drag-container div {
-      z-index: 1;
-      position: absolute;
-      margin: auto;
-      width: 12vh;
-      height: 12vh;
-      top: calc(100% - 25vh / 2);
-      right: calc(50% - 24vw / 2);
-    }
 
-    .drag-container .drag-area {
-      z-index: 0;
-      position: relative;
-      margin: auto;
-      opacity: 0.2;
-      background: lightgray;
-      width: 80vw;
-      height: 30vh;
-      border-radius: 30px;
-      top: calc(50% - 50vh / 2);
-      right: calc(20% - 40vw / 2);
-    }
-    .drag-title {
-      position: relative;
-      width: 100%;
-      height: auto;
-      top: 100px;
-      right: 0;
-      box-sizing: border-box;
-      margin: auto;
-      font-size: 5vw;
-      z-index: 0;
-    }
   }
 }
