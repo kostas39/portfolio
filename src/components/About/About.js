@@ -27,7 +27,7 @@ const About = () => {
             index={15}
           />
         </h1>
-        <p>I am a software developer who recently graduated from Le Wagon coding Bootcamp in December 2022. With a background in management and a passion for programming, I bring a unique blend of creativity and problem-solving skills to my work.</p>
+        <p>I am a Software Developer who recently graduated from Le Wagon coding Bootcamp in December 2022. With a background in management and a passion for programming, I bring a unique blend of creativity and problem-solving skills to my work.</p>
         <p>As a developer, I love to problem-solve and find innovative solutions. My training as a Restaurant Manager has honed my ability to learn new languages, master skills, and thrive in high-pressure environments. I bring a clear and focused approach to programming, leveraging my experience in hospitality industry for the past 22 years.</p>
         <p>Continuous learning is of utmost importance to me, and I am dedicated to staying updated with the latest technologies and trends. Currently, I am expanding my knowledge by exploring Kotlin and Swift for mobile development, aiming to become a well-rounded developer.
            Aside from coding, I enjoy staying active and maintaining a healthy lifestyle. Crossfit has become a part of my routine, keeping me energized and focused. When I'm not at a computer, you'll likely find me engaged in a challenging Crossfit workout.</p>
