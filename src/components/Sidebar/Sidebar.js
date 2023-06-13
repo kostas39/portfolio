@@ -45,11 +45,6 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon" />
           </a>
         </li>
-        <li>
-          <NavLink exact="true" activeclassname='active' to="/dashboard">
-            <FontAwesomeIcon icon={faGear} color="#4d4d4e" className="anchor-icon" />
-          </NavLink>
-        </li>
       </ul>
       <FontAwesomeIcon
           onClick={() => setShowNav(true)}
