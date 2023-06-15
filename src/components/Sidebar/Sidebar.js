@@ -4,7 +4,7 @@ import './Sidebar.scss';
 import letterk from '../../assets/images/letter-k.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faEnvelope, faSuitcase, faGear, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -45,6 +45,12 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon" />
           </a>
         </li>
+        <li>
+          <NavLink exact="true" activeclassname='active' to="/dashboard">
+            <FontAwesomeIcon icon={faGear} color="#4d4d4e" className="anchor-icon" />
+          </NavLink>
+        </li>
+
       </ul>
       <FontAwesomeIcon
           onClick={() => setShowNav(true)}
