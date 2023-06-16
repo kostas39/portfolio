@@ -19,6 +19,13 @@ const Home = () => {
 
   const submitPortfolio = (e) => {
     e.preventDefault();
+
+    if (!auth.currentUser) {
+      // Display custom message for restricted access
+      console.log("Access restricted to developers only");
+      return;
+    }
+
     const name = nameInput.current.value;
     const description = descriptionInput.current.value;
     const url = urlInput.current.value;
