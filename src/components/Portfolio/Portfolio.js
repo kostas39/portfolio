@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../../firebase';
 import './Portfolio.scss';
