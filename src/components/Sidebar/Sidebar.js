@@ -12,7 +12,9 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <div className='logo'>
-      <img src={letterk} alt="logo" />
+      <NavLink to="/">
+          <img src={letterk} alt="logo" />
+        </NavLink>
       <h1>KOLIOLIOS</h1>
     </div>
       <nav className={showNav ? 'mobile-show' : ''}>
