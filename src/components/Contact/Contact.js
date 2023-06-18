@@ -18,8 +18,8 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const fromName = form.current.elements.user_name.value;
-    const fromEmail = form.current.elements.user_email.value;
+    const Name = form.current.elements.user_name.value;
+    const Email = form.current.elements.user_email.value;
 
     emailjs.sendForm(
       process.env.REACT_APP_DEFAULT_SERVICE,
@@ -27,8 +27,8 @@ const Contact = () => {
       form.current,
       process.env.REACT_APP_PUBLIC_KEY,
       {
-        from_name: fromName,
-        from_email: fromEmail,
+        from_name: Name,
+        from_email: Email,
       }
       )
     .then(
