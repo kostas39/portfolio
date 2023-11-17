@@ -6,7 +6,6 @@ import { faJs, faAndroid, faHtml5, faReact, faSwift} from '@fortawesome/free-bra
 import Loader from 'react-loaders';
 import Ruby from '../../assets/images/rails-logo.png'
 
-
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -27,15 +26,26 @@ const About = () => {
             index={15}
           />
         </h1>
-        <p>I am a Software Developer who recently graduated from Le Wagon coding Bootcamp in December 2022. With a background in management and a passion for programming, I bring a unique blend of creativity and problem-solving skills to my work.</p>
-        <p>As a developer, I love to problem-solve and find innovative solutions. My training as a Restaurant Manager has honed my ability to learn new languages, master skills, and thrive in high-pressure environments. I bring a clear and focused approach to programming, leveraging my experience in hospitality industry for the past 22 years.</p>
-        <p>Continuous learning is of utmost importance to me, and I am dedicated to staying updated with the latest technologies and trends. Currently, I am expanding my knowledge by exploring Kotlin and Swift for mobile development, aiming to become a well-rounded developer.
-           Aside from coding, I enjoy staying active and maintaining a healthy lifestyle. Crossfit has become a part of my routine, keeping me energized and focused. When I'm not at a computer, you'll likely find me engaged in a challenging Crossfit workout.</p>
-      </div>
+          <p>
+            Hello! I'm Kostas, a passionate front-end developer with over a year of experience working with cutting-edge technologies like React and Next.js. Currently, I'm pursuing a degree in Computer Science at the University of West London, enriching my knowledge and skills in the ever-evolving field of technology.
+          </p>
+          <p>
+            My journey into software development began with a background in management. As a former Restaurant Manager with over 22 years of experience, I bring a unique blend of creativity and problem-solving skills to my work. My ability to learn new languages and master skills under high-pressure environments has translated seamlessly into the world of programming.
+          </p>
+          <p>
+            I specialize in front-end technologies such as React and Next.js, where I have successfully contributed to the development of dynamic and user-friendly web applications. My love for problem-solving and finding innovative solutions has been a driving force in my coding journey.
+          </p>
+          <p>
+            Continuous learning is at the core of my professional values, and I am dedicated to staying abreast of the latest technologies and trends. Currently, I am expanding my horizons by exploring Kotlin and Swift for mobile development, aiming to become a well-rounded developer.
+          </p>
+          <p>
+            When I'm not crafting beautiful and responsive user interfaces, you'll likely find me staying active and maintaining a healthy lifestyle. CrossFit is a crucial part of my routine, keeping me energized and focused. I thrive on challenges, whether it's solving coding puzzles or engaging in a rigorous CrossFit workout.
+          </p>
+        </div>
       <div className="cube-container">
         <div className="stage-cube-cont">
           <div className='cubespinner'>
-            <div className="face1">
+          <div className="face1">
               <img src={Ruby} alt="Ruby" />
             </div>
             <div className="face2">
@@ -53,7 +63,6 @@ const About = () => {
             <div className="face6">
             <FontAwesomeIcon icon={faAndroid} color="#3DDC84" />
             </div>
-
           </div>
         </div>
       </div>
