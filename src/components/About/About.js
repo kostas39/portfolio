@@ -27,20 +27,20 @@ const About = () => {
           />
         </h1>
           <p>
-            Hello! I'm Kostas, a passionate front-end developer with over a year of experience working with cutting-edge technologies like React and Next.js. Currently, I'm pursuing a degree in Computer Science at the University of West London, enriching my knowledge and skills in the ever-evolving field of technology.
+            Hello! I'm Kostas, a dedicated front-end developer with over a year of experience in cutting-edge technologies like React and Next.js. Currently, I'm contributing my skills as a front-end developer at Flashy Cash, specializing in creating dynamic and user-friendly web applications.
           </p>
           <p>
-            My journey into software development began with a background in management. As a former Restaurant Manager with over 22 years of experience, I bring a unique blend of creativity and problem-solving skills to my work. My ability to learn new languages and master skills under high-pressure environments has translated seamlessly into the world of programming.
+            My coding journey is fueled by a passion for problem-solving and finding creative solutions. I thrive in dynamic and collaborative environments, consistently delivering high-quality work. Continuous learning is a key aspect of my professional growth, and I'm dedicated to staying ahead in the ever-evolving tech landscape. Currently, I'm expanding my horizons by exploring Kotlin and Swift for mobile development, aiming to broaden my skill set.
+          </p>
+          {/* <p>
+            Problem-solving and finding creative solutions are at the core of my coding journey. I thrive in dynamic and collaborative environments, consistently delivering high-quality work.
           </p>
           <p>
-            I specialize in front-end technologies such as React and Next.js, where I have successfully contributed to the development of dynamic and user-friendly web applications. My love for problem-solving and finding innovative solutions has been a driving force in my coding journey.
-          </p>
-          <p>
-            Continuous learning is at the core of my professional values, and I am dedicated to staying abreast of the latest technologies and trends. Currently, I am expanding my horizons by exploring Kotlin and Swift for mobile development, aiming to become a well-rounded developer.
-          </p>
-          <p>
+            Continuous learning is a key aspect of my professional growth, and I am dedicated to staying abreast of the latest technologies and trends. Currently, I'm expanding my horizons by exploring Kotlin and Swift for mobile development, aiming to broaden my skill set.
+          </p> */}
+          {/* <p>
             When I'm not crafting beautiful and responsive user interfaces, you'll likely find me staying active and maintaining a healthy lifestyle. CrossFit is a crucial part of my routine, keeping me energized and focused. I thrive on challenges, whether it's solving coding puzzles or engaging in a rigorous CrossFit workout.
-          </p>
+          </p> */}
         </div>
       <div className="cube-container">
         <div className="stage-cube-cont">

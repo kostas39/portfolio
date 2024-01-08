@@ -10,7 +10,7 @@ import Loader from 'react-loaders';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = 'ostas'.split('');
-  const jobArray = 'Software Developer'.split('');
+  const jobArray = 'Front End Developer'.split('');
 
   useEffect(() => {
     setTimeout(() => {
@@ -36,9 +36,9 @@ const Home = () => {
         <br />
         <AnimatedLetters letterClass={letterClass}
         strArray={jobArray}
-        index={18} />
+        index={17} />
         </h1>
-        <h2>Software Developer</h2>
+        <h2>Front End Developer</h2>
         <div className="img-badges">
           <img src="https://img.shields.io/badge/html5%20-%23e34f26.svg?&style=for-the-badge&logo=html5&logoColor=white"  alt='html'/>
           <img src="https://img.shields.io/badge/CSS3-1572B6?&style=for-the-badge&logo=css3&logoColor=white" alt='css'/>
