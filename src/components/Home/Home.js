@@ -10,7 +10,7 @@ import Loader from 'react-loaders';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = 'ostas'.split('');
-  const jobArray = 'Front End Developer'.split('');
+  const jobArray = 'Data Engineer'.split('');
 
   useEffect(() => {
     setTimeout(() => {
@@ -38,10 +38,11 @@ const Home = () => {
         strArray={jobArray}
         index={17} />
         </h1>
-        <h2>Front End Developer</h2>
+        <h2>Data Engineer</h2>
         <div className="img-badges">
-          <img src="https://img.shields.io/badge/html5%20-%23e34f26.svg?&style=for-the-badge&logo=html5&logoColor=white"  alt='html'/>
-          <img src="https://img.shields.io/badge/CSS3-1572B6?&style=for-the-badge&logo=css3&logoColor=white" alt='css'/>
+          <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=blue" alt="Python" width="180" height="30" />
+          <img src="https://img.shields.io/badge/SQL-MySQL%20%7C%20PostgreSQL%20%7C%20SQLite-blue?style=for-the-badge&logo=sql&logoColor=white" alt="SQL" width="180" height="30" />
+<br />
           <img src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white" alt='rails'/>
           <img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white" alt='ruby'/>
           <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt='react'/>
