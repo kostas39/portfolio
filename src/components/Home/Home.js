@@ -10,7 +10,7 @@ import Loader from 'react-loaders';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = 'ostas'.split('');
-  const jobArray = 'Data Engineer'.split('');
+  const jobArray = 'Software Developer'.split('');
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,9 +40,7 @@ const Home = () => {
         </h1>
         <h2>Data Engineer</h2>
         <div className="img-badges">
-          <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=blue" alt="Python" width="180" height="30" />
-          <img src="https://img.shields.io/badge/SQL-MySQL%20%7C%20PostgreSQL%20%7C%20SQLite-blue?style=for-the-badge&logo=sql&logoColor=white" alt="SQL" width="180" height="30" />
-<br />
+
           <img src="https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white" alt='rails'/>
           <img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white" alt='ruby'/>
           <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt='react'/>
@@ -59,6 +57,9 @@ const Home = () => {
           <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="kotlin"/>
           <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="swift"/>
           <img src="https://img.shields.io/badge/SwiftUI-FF5A05?style=for-the-badge&logo=swift&logoColor=white" alt="swiftui"/>
+          <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=blue" alt="Python" width="180" height="30" />
+          <img src="https://img.shields.io/badge/SQL-MySQL%20%7C%20PostgreSQL%20%7C%20SQLite-blue?style=for-the-badge&logo=sql&logoColor=white" alt="SQL" width="180" height="30" />
+
         </div>
         <Link to="/contact" className="flat-button">Contact Me</Link>
       </div>
