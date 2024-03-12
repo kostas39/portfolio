@@ -28,13 +28,13 @@ const About = () => {
           />
         </h1>
           <p>
-            Hi there! I'm Kostas, a results-driven front-end developer with a solid background in cutting-edge technologies like React and Next.js. Over the past year, I've been contributing my skills as a front-end developer at Flashy Cash, specializing in creating dynamic and user-friendly web applications.
+            Hello! I'm Kostas, a dedicated front-end developer with over a year of experience in cutting-edge technologies like React and Next.js. Previously, I contributed my skills as a front-end developer at Flashy Cash, specializing in creating dynamic and user-friendly web applications.
           </p>
           <p>
-            As I evolve in my coding journey, I'm excited to share that my focus is shifting towards data engineering. I am passionate about leveraging technology to extract meaningful insights from data, and I'm actively upskilling in languages like Python and SQL to make this transition seamless. My problem-solving mindset and commitment to delivering high-quality work remain unwavering, and I'm ready to bring these skills to the dynamic field of data engineering.
+            Currently, I'm in the exciting process of transitioning to mobile development, focusing on React Native and iOS technologies. My passion for problem-solving and finding creative solutions continues to drive my coding journey. I have a proven track record of thriving in dynamic and collaborative environments, consistently delivering high-quality work.
           </p>
           <p>
-            Collaborative environments fuel my enthusiasm, and I'm eager to apply my expertise to design robust data-driven solutions. Continuous learning has been a cornerstone of my professional growth, and I'm thrilled to embark on this journey towards becoming a proficient data engineer. Stay tuned for exciting developments as I expand my horizons in the ever-evolving tech landscape!
+            As part of my commitment to continuous learning, I am expanding my horizons by delving into Kotlin and Swift for mobile development, aiming to broaden my skill set. I am enthusiastic about the challenges and opportunities that come with mobile development and look forward to contributing my expertise to innovative projects in this space.
           </p>
           {/* <p>
             Problem-solving and finding creative solutions are at the core of my coding journey. I thrive in dynamic and collaborative environments, consistently delivering high-quality work.

@@ -10,6 +10,14 @@
   overflow: hidden;
 }
 
+.text-zone {
+  max-height: 100vh; // Keep the maximum height to the viewport height
+  overflow-y: auto; // Allow vertical scrolling
+  padding: 20px 20px 50px 20px; // Adjust padding for top, right, bottom, and left
+  margin-top: 40px; // Space at the top
+  line-height: 1.6; // Line spacing for readability
+}
+
 @media screen and (max-width: 1200px) {
   .stage-cube-cont {
     position: initial;
@@ -18,6 +26,14 @@
     overflow: visible;
     padding-bottom: 18%;
     margin-top: 50px; /* Add margin to create space at the top */
+  }
+
+  .text-zone {
+    max-height: none; // Remove max height restriction on smaller screens
+    overflow-y: auto; // Ensure scrolling is enabled
+    font-size: 16px; // Adjust font size for smaller screens
+    margin-top: 40px; // Top margin for consistency
+    padding: 20px 20px 50px 20px; // Adjust padding for smaller screens
   }
 
   .blank {
