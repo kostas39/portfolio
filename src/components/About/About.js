@@ -2,8 +2,8 @@ import './About.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faPython, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faJs, faApple, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import Loader from 'react-loaders';
 import Ruby from '../../assets/images/rails-logo.png'
 
@@ -50,7 +50,8 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className='cubespinner'>
           <div className="face1">
-              <img src={Ruby} alt="Ruby" />
+            <FontAwesomeIcon icon={faApple} color="#000000" /> {/* Apple icon, symbolizing Xcode/Apple ecosystem */}
+
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -62,10 +63,10 @@ const About = () => {
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faPython} color="#3776AB" /> {/* Python icon */}
+              <FontAwesomeIcon icon={faMobileAlt} color="#3776AB" /> {/* Generic mobile development icon, could symbolize Swift */}
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faDatabase} color="#E44D26" /> {/* Database/SQL icon */}
+              <img src={Ruby} alt="Ruby" />
             </div>
           </div>
         </div>
