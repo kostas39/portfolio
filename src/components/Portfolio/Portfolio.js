@@ -1,56 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
-import { getDocs, collection } from 'firebase/firestore';
 import { db } from '../../Firebase';
 import './Portfolio.scss';
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const [portfolio, setPortfolio] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
-  }, []);
 
-  useEffect(() => {
-    getPortfolio();
-  }, []);
+    const fetchPortfolio = async () => {
+      try {
+        const portfolioCollection = collection(db, 'portfolio'); // ensure collection name matches in Firestore
+        const portfolioSnapshot = await getDocs(portfolioCollection);
+        const portfolioList = portfolioSnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        console.log('Fetched portfolio:', portfolioList); // Log fetched data
+        setPortfolio(portfolioList);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error fetching portfolio data: ", error);
+      }
+    };
 
-  const getPortfolio = async () => {
-    const querySnapshot = await getDocs(collection(db, 'portfolio'));
-    console.log(querySnapshot);
-    setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-  };
+    fetchPortfolio();
+  }, []);
 
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
-        {portfolio.map((port, idx) => {
-          return (
-            <div key={idx} className="image-box">
-              <img
-                src={port.image}
-                alt="portfolio cover"
-                className="portfolio-image"
-              />
-              <div className="content">
-                <p className="title">{port.name}</p>
-                <h4 className="description">{port.description}</h4>
-                <button
-                  className="button"
-                  onClick={() => {
-                    window.open(port.url);
-                  }}
-                >
-                  View
-                </button>
-              </div>
-            </div>
-          );
-        })}
+        {portfolio.map((port, idx) => (
+          <div key={idx} className="project-card">
+            <h2 className="project-title">{port.name}</h2>
+            <p className="project-description">{port.description}</p>
+            <img src={port.image} alt={port.name} className="project-image" />
+            <button className="button" onClick={() => window.open(port.url)}>
+              View Project
+            </button>
+          </div>
+        ))}
       </div>
     );
   };
@@ -65,9 +61,8 @@ const Portfolio = () => {
             index={15}
           />
         </h1>
-        <div>{renderPortfolio(portfolio)}</div>
+        {loading ? <Loader type="pacman" /> : <div>{renderPortfolio(portfolio)}</div>}
       </div>
-      <Loader type="pacman" />
     </>
   );
 };
