@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import { db } from '../../Firebase';
@@ -17,8 +17,9 @@ const Portfolio = () => {
 
     const fetchPortfolio = async () => {
       try {
-        const portfolioCollection = collection(db, 'portfolio'); // ensure collection name matches in Firestore
-        const portfolioSnapshot = await getDocs(portfolioCollection);
+        const portfolioCollection = collection(db, 'portfolio');
+        const q = query(portfolioCollection, orderBy('sortOrder', 'asc'));
+        const portfolioSnapshot = await getDocs(q);
         const portfolioList = portfolioSnapshot.docs.map(doc => ({
           id: doc.id,
           ...doc.data()
