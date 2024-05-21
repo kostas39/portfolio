@@ -26,16 +26,17 @@ const About = () => {
             strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
             index={15}
           />
-        </h1>
+       </h1>
           <p>
-            Hello! I'm Kostas, a dedicated front-end developer with over a year of experience in cutting-edge technologies like React and Next.js. Previously, I contributed my skills as a front-end developer at Flashy Cash, specializing in creating dynamic and user-friendly web applications.
+            Hello! I'm Kostas, a dedicated iOS Engineer with expertise in front-end technologies and a passion for mobile application development. Previously, I worked as a Front End Developer Intern at Flashy Cash, where I specialized in developing responsive web interfaces and enhancing app interactivity through API integration.
           </p>
           <p>
-            Currently, I'm in the exciting process of transitioning to mobile development, focusing on  iOS development. My passion for problem-solving and finding creative solutions continues to drive my coding journey. I have a proven track record of thriving in dynamic and collaborative environments, consistently delivering high-quality work.
+            Currently, I'm focusing on iOS development, leveraging my skills in Swift, SwiftUI, and Core Data to create user-centric mobile applications. My analytical abilities and process-driven mindset enable me to thrive in dynamic and collaborative environments, consistently delivering high-quality digital solutions.
           </p>
           <p>
-            As part of my commitment to continuous learning, I am expanding my horizons by delving into Kotlin and React Native for mobile development, aiming to broaden my skill set. I am enthusiastic about the challenges and opportunities that come with mobile development and look forward to contributing my expertise to innovative projects in this space.
+            As part of my commitment to continuous learning, I am pursuing a Bachelor of Computer Science and have completed a Full-Stack Web Development & Computer Programming course at Le Wagon. I am enthusiastic about the challenges and opportunities in mobile development and look forward to contributing my expertise to innovative projects in this space.
           </p>
+
           {/* <p>
             Problem-solving and finding creative solutions are at the core of my coding journey. I thrive in dynamic and collaborative environments, consistently delivering high-quality work.
           </p>
