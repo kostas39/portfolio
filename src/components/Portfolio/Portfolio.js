@@ -1,56 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
-import { db } from '../../Firebase';
 import './Portfolio.scss';
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const [portfolio, setPortfolio] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
-
-    const fetchPortfolio = async () => {
-      try {
-        const portfolioCollection = collection(db, 'portfolio');
-        const q = query(portfolioCollection, orderBy('sortOrder', 'asc'));
-        const portfolioSnapshot = await getDocs(q);
-        const portfolioList = portfolioSnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        }));
-        console.log('Fetched portfolio:', portfolioList); // Log fetched data
-        setPortfolio(portfolioList);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching portfolio data: ", error);
-      }
-    };
-
-    fetchPortfolio();
   }, []);
-
-  const renderPortfolio = (portfolio) => {
-    return (
-      <div className="images-container">
-        {portfolio.map((port, idx) => (
-          <div key={idx} className="project-card">
-            <h2 className="project-title">{port.name}</h2>
-            <p className="project-description">{port.description}</p>
-            <img src={port.image} alt={port.name} className="project-image" />
-            <button className="button" onClick={() => window.open(port.url)}>
-              View Project
-            </button>
-          </div>
-        ))}
-      </div>
-    );
-  };
 
   return (
     <>
@@ -62,8 +22,16 @@ const Portfolio = () => {
             index={15}
           />
         </h1>
-        {loading ? <Loader type="pacman" /> : <div>{renderPortfolio(portfolio)}</div>}
+        <div className="construction-container">
+          <h2 className="construction-message">
+            🚧 Portfolio Under Construction 🚧
+          </h2>
+          <p className="construction-details">
+            Thank you for visiting! My portfolio is currently being updated with new content and exciting projects. Please check back soon to see the latest updates.
+          </p>
+        </div>
       </div>
+      <Loader type="pacman" />
     </>
   );
 };

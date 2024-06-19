@@ -2,10 +2,9 @@ import './About.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faApple, faHtml5, faReact } from '@fortawesome/free-brands-svg-icons';
-import { faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCloud, faCode, faCogs } from '@fortawesome/free-solid-svg-icons';
+import { faAws, faGoogle, faDocker } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
-import Ruby from '../../assets/images/rails-logo.png'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -17,63 +16,58 @@ const About = () => {
   }, [])
 
   return (
-      <>
-    <div className="container about-page">
-      <div className="text-zone">
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-            index={15}
-          />
-       </h1>
+    <>
+      <div className="container about-page">
+        <div className="text-zone">
+          <h1>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              index={15}
+            />
+          </h1>
           <p>
-            Hello! I'm Kostas, a dedicated iOS Engineer with expertise in front-end technologies and a passion for mobile application development. Previously, I worked as a Front End Developer Intern at Flashy Cash, where I specialized in developing responsive web interfaces and enhancing app interactivity through API integration.
+            Hello! I'm Kostas, a motivated Cloud Engineer with a solid foundation in iOS and front-end development. I have recently transitioned to the field of cloud computing, bringing my expertise in mobile application development to the dynamic world of cloud engineering.
           </p>
           <p>
-            Currently, I'm focusing on iOS development, leveraging my skills in Swift, SwiftUI, and Core Data to create user-centric mobile applications. My analytical abilities and process-driven mindset enable me to thrive in dynamic and collaborative environments, consistently delivering high-quality digital solutions.
+            Previously, I worked as a Front End Developer Intern at Flashy Cash, where I specialized in developing responsive web interfaces and enhancing app interactivity through API integration. This experience honed my technical skills and problem-solving abilities, which I now apply to designing and managing scalable cloud solutions.
           </p>
           <p>
-            As part of my commitment to continuous learning, I am pursuing a Bachelor of Computer Science and have completed a Full-Stack Web Development & Computer Programming course at Le Wagon. I am enthusiastic about the challenges and opportunities in mobile development and look forward to contributing my expertise to innovative projects in this space.
-          </p>
-
-          {/* <p>
-            Problem-solving and finding creative solutions are at the core of my coding journey. I thrive in dynamic and collaborative environments, consistently delivering high-quality work.
+            Currently, I am focusing on cloud engineering and have earned the <strong>Microsoft Certified: Azure Solutions Architect Expert</strong> certification. I am proficient in leveraging Microsoft Azure to create robust and efficient cloud infrastructures, and I am expanding my knowledge of other cloud platforms such as AWS and Google Cloud.
           </p>
           <p>
-            Continuous learning is a key aspect of my professional growth, and I am dedicated to staying abreast of the latest technologies and trends. Currently, I'm expanding my horizons by exploring Kotlin and Swift for mobile development, aiming to broaden my skill set.
-          </p> */}
-          {/* <p>
-            When I'm not crafting beautiful and responsive user interfaces, you'll likely find me staying active and maintaining a healthy lifestyle. CrossFit is a crucial part of my routine, keeping me energized and focused. I thrive on challenges, whether it's solving coding puzzles or engaging in a rigorous CrossFit workout.
-          </p> */}
+            My technical expertise includes Azure services, Infrastructure as Code (IaC) with Terraform and ARM templates, and automation using CI/CD pipelines. I am passionate about continuous learning and am pursuing a Bachelor of Computer Science to further deepen my understanding of cloud technologies.
+          </p>
+          <p>
+            I am excited about the challenges and opportunities in cloud engineering and am eager to contribute my skills to innovative projects that harness the power of cloud computing. Explore my portfolio to see how I leverage cloud technologies to drive innovation and efficiency.
+          </p>
         </div>
-      <div className="cube-container">
-        <div className="stage-cube-cont">
-          <div className='cubespinner'>
-          <div className="face1">
-            <FontAwesomeIcon icon={faApple} color="#000000" /> {/* Apple icon, symbolizing Xcode/Apple ecosystem */}
-
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-            <FontAwesomeIcon icon={faJs} color="#EFd81D" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faMobileAlt} color="#3776AB" /> {/* Generic mobile development icon, could symbolize Swift */}
-            </div>
-            <div className="face6">
-              <img src={Ruby} alt="Ruby" />
+        <div className="cube-container">
+          <div className="stage-cube-cont">
+            <div className='cubespinner'>
+              <div className="face1">
+                <FontAwesomeIcon icon={faCloud} color="#0078D4" /> {/* Azure cloud icon */}
+              </div>
+              <div className="face2">
+                <FontAwesomeIcon icon={faAws} color="#FF9900" /> {/* AWS icon */}
+              </div>
+              <div className="face3">
+                <FontAwesomeIcon icon={faGoogle} color="#4285F4" /> {/* Google Cloud icon */}
+              </div>
+              <div className="face4">
+                <FontAwesomeIcon icon={faCode} color="#623CE4" /> {/* Terraform icon */}
+              </div>
+              <div className="face5">
+                <FontAwesomeIcon icon={faDocker} color="#2496ED" /> {/* Docker icon */}
+              </div>
+              <div className="face6">
+                <FontAwesomeIcon icon={faCogs} color="#2088FF" /> {/* CI/CD, generic tools icon */}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <Loader type="pacman" />
+      <Loader type="pacman" />
     </>
   )
 }

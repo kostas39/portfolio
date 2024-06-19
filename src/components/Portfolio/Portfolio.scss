@@ -1,85 +1,62 @@
 @import '../../App.scss';
 
 .portfolio-page {
-  height: 100%;
-  overflow: auto;
+  display: flex; // Add flexbox to center content
+  flex-direction: column; // Stack items vertically
+  align-items: center; // Center align items
+  justify-content: center; // Center items vertically
+  height: 100vh; // Full viewport height for centering
+  text-align: center; // Center align text
 
   h1.page-title {
-    margin-left: 100px;
-    margin-top: 100px;
+    margin: 0; // Remove margin to adjust positioning
+    padding-top: 50px; // Space at the top for "Kostas Portfolio"
+    font-size: 2.5rem; // Adjust font size for better appearance
+    color: var(--primary-color); // Use primary color for consistency
   }
 
-  .images-container {
-    display: flex;
-    flex-direction: column; // Change to column to stack projects vertically
-    gap: 15px;
-    padding: 18px;
-  }
+  .construction-container {
+    margin-top: 20px; // Adjust margin for spacing
+    padding: 20px; // Add padding for spacing
+    border: 1px solid #ddd; // Light border for emphasis
+    border-radius: 10px; // Rounded corners for a modern look
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px; // Soft shadow for depth
+    background-color: #f8f8f8; // Light background for readability
+    max-width: 600px; // Constrain width to look better on larger screens
 
-  .project-card {
-    display: flex;
-    flex-direction: column; // Stack elements vertically within each project card
-    align-items: center; // Center align items
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
-    background-color: lightgrey;
-
-    .project-title {
-      font-size: 40px;
-      font-weight: 600;
-      margin-bottom: 10px;
+    .construction-message {
+      font-size: 2em; // Larger font size for emphasis
+      color: #ff9900; // Use a construction color
+      margin-bottom: 20px; // Spacing between message and details
+      font-weight: bold; // Bold text for emphasis
     }
 
-    .project-description {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .project-image {
-      width: 100%;
-      max-width: 400px;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
-
-    .button {
-      padding: 10px 20px;
-      background-color: var(--primary-color);
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
-      margin-bottom: 20px;
-
-      &:hover {
-        background-color: var(--secondary-color);
-      }
+    .construction-details {
+      font-size: 1.2em; // Smaller font for additional details
+      color: #666; // Use a neutral color for details
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .images-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
   .portfolio-page {
     padding: 20px;
     box-sizing: border-box;
 
     h1.page-title {
-      font-size: 40px;
-      margin-left: 20px;
-      margin-top: 20px;
+      font-size: 2rem; // Adjust font size for smaller screens
+      padding-top: 20px; // Adjust padding for smaller screens
+    }
+
+    .construction-container {
+      margin-top: 10px; // Adjust margin for smaller screens
+      padding: 10px; // Reduced padding for smaller screens
+      .construction-message {
+        font-size: 1.5em; // Adjust font size for smaller screens
+      }
+      .construction-details {
+        font-size: 1em; // Adjust font size for smaller screens
+      }
     }
   }
 }
