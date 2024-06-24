@@ -27,13 +27,13 @@ const About = () => {
             />
           </h1>
             <p>
-              Hello! I'm Kostas, a motivated Cloud Engineer with a robust background in iOS and front-end development. Recently, I’ve transitioned to cloud computing, leveraging my expertise in mobile and web application development to excel in the dynamic realm of cloud engineering.
+              Hello! I'm Kostas, a motivated Platform Engineer with a robust background in iOS and front-end development. Recently, I’ve transitioned to cloud computing, leveraging my expertise in mobile and web application development to excel in the dynamic realm of platform engineering.
             </p>
             <p>
               My career began as a Front-End Developer Intern at Flashy Cash, where I honed my skills in developing responsive web interfaces and enhancing app interactivity through API integration. This experience solidified my technical acumen and problem-solving abilities, which I now apply to designing and managing scalable cloud solutions.
             </p>
             <p>
-              Currently, I am expanding my focus to encompass AWS cloud engineering and am working towards earning the <strong>AWS Solutions Architect Associate</strong> certification. I have a strong foundation in creating robust cloud infrastructures using various cloud services, Infrastructure as Code (IaC) with Terraform and ARM templates, and automation through CI/CD pipelines. I am also exploring other cloud platforms like Microsoft Azure and Google Cloud to broaden my expertise.
+              Currently, I am expanding my focus to encompass AWS platform engineering and am working towards earning the <strong>AWS Solutions Architect Associate</strong> certification. I have a strong foundation in creating robust cloud infrastructures using various cloud services, Infrastructure as Code (IaC) with Terraform and ARM templates, and automation through CI/CD pipelines. I am also exploring other cloud platforms like Microsoft Azure and Google Cloud to broaden my expertise.
             </p>
             <p>
               My technical expertise includes cloud service management, IaC, and cloud automation. I am committed to continuous learning and am pursuing a Bachelor of Computer Science to deepen my understanding of cloud technologies further.
