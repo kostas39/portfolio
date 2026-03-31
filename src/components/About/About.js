@@ -27,19 +27,25 @@ const About = () => {
             />
           </h1>
             <p>
-              Hello! I'm Kostas, a motivated Platform Engineer with a robust background in iOS and front-end development. Recently, I’ve transitioned to cloud computing, leveraging my expertise in mobile and web application development to excel in the dynamic realm of platform engineering.
+              Hello, I'm Kostas — a Platform Engineer with hands-on experience designing and operating cloud infrastructure, CI/CD pipelines, and Kubernetes-based platforms.
             </p>
             <p>
-              My career began as a Front-End Developer Intern at Flashy Cash, where I honed my skills in developing responsive web interfaces and enhancing app interactivity through API integration. This experience solidified my technical acumen and problem-solving abilities, which I now apply to designing and managing scalable cloud solutions.
+              Currently working as a DevOps Engineer at EY, I focus on building scalable and reliable systems using Infrastructure as Code (Terraform), container orchestration (Kubernetes), and automated deployment pipelines across cloud environments.
             </p>
             <p>
-              Currently, I am expanding my focus to encompass AWS platform engineering and am working towards earning the <strong>AWS Solutions Architect Associate</strong> certification. I have a strong foundation in creating robust cloud infrastructures using various cloud services, Infrastructure as Code (IaC) with Terraform and ARM templates, and automation through CI/CD pipelines. I am also exploring other cloud platforms like Microsoft Azure and Google Cloud to broaden my expertise.
+              My background spans AWS (Solutions Architect Associate certified), Azure, and increasingly GCP, giving me a multi-cloud perspective when designing platforms. I specialize in translating business requirements into resilient, production-ready architectures with a strong emphasis on automation, scalability, and maintainability.
             </p>
             <p>
-              My technical expertise includes cloud service management, IaC, and cloud automation. I am committed to continuous learning and am pursuing a Bachelor of Computer Science to deepen my understanding of cloud technologies further.
+              I have practical experience working with real-world environments, improving deployment workflows, troubleshooting distributed systems, and collaborating across teams to deliver stable and efficient platforms.
             </p>
             <p>
-              I am enthusiastic about the opportunities in cloud engineering and am eager to contribute my skills to innovative projects that harness the power of cloud computing. Explore my portfolio to see how I leverage cloud technologies to drive innovation and efficiency.
+              I am currently expanding my platform engineering expertise into Google Cloud Platform (GCP), focusing on designing scalable, production-ready architectures and preparing for the Professional Cloud Architect certification.
+            </p>
+            <p>
+              I'm currently focused on advancing my expertise in platform engineering, cloud architecture, and Kubernetes ecosystems, with the goal of building high-performance, developer-friendly platforms at scale.
+            </p>
+            <p>
+              Currently open to Platform Engineering opportunities in London, focusing on cloud-native infrastructure and scalable system design.
             </p>
 
 
