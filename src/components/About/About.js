@@ -42,7 +42,7 @@ const About = () => {
               I am currently expanding my platform engineering expertise into Google Cloud Platform (GCP), focusing on designing scalable, production-ready architectures and preparing for the Professional Cloud Architect certification.
             </p>
             <p>
-              I'm currently focused on advancing my expertise in platform engineering, cloud architecture, and Kubernetes ecosystems, with the goal of building high-performance, developer-friendly platforms at scale.
+              I am currently focused on advancing my expertise in platform engineering, cloud architecture, and Kubernetes ecosystems, with the goal of building high-performance, developer-friendly platforms at scale.
             </p>
             <p>
               Currently open to Platform Engineering opportunities in London, focusing on cloud-native infrastructure and scalable system design.
